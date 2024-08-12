@@ -1,3 +1,9 @@
+document.getElementById("city").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    getWeather();
+  }
+});
+
 function getWeather() {
   const apiKey = "1b73d59d0f16f985a5e2e821849f58fa";
   const city = document.getElementById("city").value;
